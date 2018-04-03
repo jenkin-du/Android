@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">GuessWords</string>
+    <string name="action_settings">Settings</string>
+    <string name="string1">单词：</string>
+    <string name="string2">游戏得分：</string>
+    <string name="hint">请输入所猜单词！</string>
+    <string name="button">确定</string>
+
+</resources>

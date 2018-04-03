@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbf9f9">
+    <View android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="#CACACA"
+        android:layout_above="@+id/linear2"
+        android:layout_marginBottom="6dp"
+
+        android:id="@+id/view8" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:id="@+id/linearLayout"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="兼职管理"
+            android:textColor="#282727"
+            android:id="@+id/releaseTV"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/chat"
+            android:textColor="#282727"
+            android:id="@+id/chatTV"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/personInfo"
+            android:textColor="#282727"
+            android:id="@+id/personInfoTV"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:showDividers="beginning"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:id="@+id/linear2">
+
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/releaseIB"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:src="@drawable/release"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/chatIB"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/chat"
+            android:scaleType="fitCenter"
+           />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/infoIB"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/info"
+            android:scaleType="fitCenter"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/chooseTitle"
+            android:gravity="center"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:background="#c8fefcfc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="3"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/releaseB"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="@string/status3"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/onRunB"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="@string/status1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/timeOutB"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="@string/status2"/>
+    </LinearLayout>
+
+    <!--
+  <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/view8" />
+ -->
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/view8"
+
+        >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+    </FrameLayout>
+
+</RelativeLayout>

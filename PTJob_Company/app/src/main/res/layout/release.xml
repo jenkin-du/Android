@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/releaseTitle"
+                    android:text="@string/releaseTitle"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/releaseTitle"
+
+                    android:id="@+id/view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/releaseName"
+                    android:gravity="bottom"
+                    android:id="@+id/releaseNameTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/releaseTitle"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/releaseNameET"
+                    android:layout_below="@+id/view"
+                    android:layout_alignParentEnd="true"
+                    android:hint="@string/releaseHint1"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/releaseTypeTV"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/view2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/releaseType"
+                    android:gravity="center"
+                    android:id="@+id/releaseTypeTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/releaseNameTV"
+                    android:layout_alignParentStart="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/releaseDate"
+                    android:gravity="bottom"
+                    android:id="@+id/releaseDateTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/releaseTypeTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/datePickerET"
+                    android:layout_below="@+id/spinner"
+                    android:layout_alignParentEnd="true"
+                    android:hint="@string/releaseHint2"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/TimePickerHint1"
+                    android:gravity="bottom"
+                    android:id="@+id/TimePickerTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/releaseDateTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/TimePickerET"
+                    android:layout_below="@+id/datePickerET"
+                    android:hint="@string/releaseHint3"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <Spinner
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner"
+                    android:layout_alignTop="@+id/releaseTypeTV"
+                    android:layout_alignEnd="@+id/TimePickerET"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/TimePickerHint3"
+                    android:gravity="bottom"
+                    android:id="@+id/EndTimePickerTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/TimePickerTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/EndTimePickerET"
+                    android:layout_below="@+id/TimePickerET"
+                    android:hint="@string/releaseHint4"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/TimeLast"
+                    android:gravity="bottom"
+                    android:id="@+id/TimeLastTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/EndTimePickerTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/TimeLastET"
+                    android:hint="@string/releaseHint5"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/EndTimePickerET"
+                    android:layout_alignStart="@+id/EndTimePickerET"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit1"
+                    android:textSize="20dp"
+                    android:id="@+id/textView4"
+                    android:gravity="bottom"
+                    android:layout_above="@+id/view3"
+                    android:layout_toEndOf="@+id/numberOfEmployET" />
+
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/TimeLastTV"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/view3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/numberOfEmploy"
+                    android:gravity="bottom"
+                    android:id="@+id/numberOfEmployTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/TimeLastTV"
+                    android:layout_alignStart="@+id/TimeLastTV"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/numberOfEmployET"
+                    android:hint="@string/releaseHint5"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_below="@+id/view3"
+                    android:layout_alignStart="@+id/TimeLastET" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit2"
+                    android:textSize="20dp"
+                    android:id="@+id/textView3"
+                    android:gravity="bottom"
+
+                    android:layout_alignBottom="@+id/numberOfEmployET"
+                    android:layout_toEndOf="@+id/numberOfEmployET" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/salary"
+                    android:gravity="bottom"
+                    android:id="@+id/salaryTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/numberOfEmployTV"
+                    android:layout_alignParentStart="true" />
+
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/salaryTV"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/view4" />
+
+                <EditText
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/salaryET"
+                    android:hint="@string/releaseHint5"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/numberOfEmployET"
+                    android:layout_alignStart="@+id/EndTimePickerET"
+                    android:inputType="number"/>
+
+                <Spinner
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner2"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignEnd="@+id/textView3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/genderRequest"
+                    android:gravity="bottom"
+                    android:id="@+id/genderRequestTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/salaryTV"
+                    android:layout_alignParentStart="true"/>
+
+                <Spinner
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner3"
+                    android:layout_below="@+id/salaryET"
+                    android:layout_alignEnd="@+id/TimePickerET"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/experienceRequest"
+                    android:gravity="bottom"
+                    android:id="@+id/experienceTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/genderRequestTV"
+                    android:layout_alignStart="@+id/TimeLastTV"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"/>
+
+                <Spinner
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner4"
+                    android:layout_below="@+id/spinner3"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignEnd="@+id/TimePickerET"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/descripton"
+                    android:gravity="center"
+                    android:id="@+id/descriptionTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/heightTV"
+                    android:layout_alignStart="@+id/TimeLastTV"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/descriptionET"
+                    android:scrollbars="vertical"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:layout_below="@+id/view5"
+                    android:layout_alignStart="@+id/TimeLastET"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/heightRequest"
+                    android:gravity="bottom"
+                    android:id="@+id/heightTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/experienceTV"
+                    android:layout_alignParentStart="true" />
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/heightTV"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/view5"
+                    />
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/heightET"
+                    android:scrollbars="vertical"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"
+                    android:layout_below="@+id/spinner4"
+                    android:layout_alignStart="@+id/TimeLastET"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/detail"
+                    android:gravity="center"
+                    android:id="@+id/detailTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/descriptionTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/detailET"
+                    android:scrollbars="vertical"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:layout_below="@+id/descriptionET"
+                    android:layout_alignStart="@+id/TimeLastET"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginTop="5dp"/>
+
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/detailTV"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/view6"
+                    />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_below="@+id/view7"
+                    android:text="确认发布"
+                    android:background="@drawable/shape"
+                    android:id="@+id/submitButton"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/rcontactnumber"
+                    android:gravity="center"
+                    android:id="@+id/phoneTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/view6"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/phoneET"
+
+                    android:textSize="15dp"
+
+                    android:layout_below="@+id/view6"
+                    android:layout_alignStart="@+id/TimeLastET"
+
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/rcontactperson"
+                    android:gravity="center"
+                    android:id="@+id/contactNameOfRealeaseTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/phoneTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/contactNameOfRealeaseET"
+
+                    android:textSize="15dp"
+
+                    android:layout_below="@+id/phoneTV"
+                    android:layout_alignStart="@+id/TimeLastET"
+
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/workAddress"
+                    android:gravity="center"
+                    android:id="@+id/contactAddressOfRealeaseTV"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/contactNameOfRealeaseTV"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/contactAddressOfRealeaseET"
+                    android:hint="@string/choiceofAddressButton"
+                    android:layout_below="@+id/contactNameOfRealeaseET"
+                    android:layout_alignStart="@+id/detailET">
+
+                </EditText>
+
+
+                <View android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#CACACA"
+                    android:layout_below="@+id/contactAddressOfRealeaseTV"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/view7"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+       </ScrollView
+           >
+
+</LinearLayout>

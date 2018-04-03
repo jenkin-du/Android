@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="请输入地区"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_show"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner_sheng"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+
+            android:gravity="center"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner_shi"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:spinnerMode="dialog"
+            android:gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_qu"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_detailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/layout_select"
+        android:hint="请输入详细地址"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+
+        android:layout_below="@+id/et_detailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="确定"/>
+</RelativeLayout>

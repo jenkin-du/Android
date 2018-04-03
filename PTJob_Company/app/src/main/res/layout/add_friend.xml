@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.lenovo.ptjob_company.com.View.NavigationBar
+        android:id="@+id/id_add_friend_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_text_visible="true"
+        app:title_text="已申请者" />
+
+
+    <ListView
+        android:id="@+id/id_add_friend_result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+</LinearLayout>

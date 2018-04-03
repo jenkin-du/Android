@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:showDividers="beginning"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:id="@+id/linear2">
+
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/releaseIB"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:src="@drawable/release"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/chatIB1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/chat"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/infoIB"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/info"
+            android:scaleType="fitCenter"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:id="@+id/linearLayout"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="兼职管理"
+            android:textColor="#282727"
+            android:id="@+id/releaseTV"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/chat"
+            android:textColor="#282727"
+            android:id="@+id/chatTV"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/personInfo"
+            android:textColor="#282727"
+            android:id="@+id/personInfoTV"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="#CACACA"
+        android:layout_above="@+id/linear2"
+        android:layout_marginBottom="6dp"
+
+        android:id="@+id/view8" />
+
+    <FrameLayout
+        android:layout_above="@id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame1"/>
+
+
+
+</RelativeLayout>

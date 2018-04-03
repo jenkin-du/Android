@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v8"
+        android:src="@drawable/h"
+       android:paddingLeft="5dp"
+        android:paddingTop="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v7"
+        android:src="@drawable/g"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v6"
+        android:src="@drawable/f"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/v5"
+    android:src="@drawable/e"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v4"
+        android:src="@drawable/d"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v3"
+        android:src="@drawable/c"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v2"
+        android:src="@drawable/b"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v1"
+        android:src="@drawable/a"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp" />
+</FrameLayout>

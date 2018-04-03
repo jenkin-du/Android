@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/rnameET"
+        android:background="#FF9933"
+        android:id="@+id/linearLayout5">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/backIB"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="注册"
+            android:gravity="center"
+            android:id="@+id/textView15"
+            android:textSize="20dp"
+            android:layout_marginLeft="120dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:text="@string/rname"
+            android:textSize="17dp"
+            android:id="@+id/rnameTV"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPersonName"
+            android:hint="@string/rnamehint"
+            android:ems="10"
+            android:id="@+id/rnameET"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:text="@string/rpassword"
+            android:textSize="17dp"
+            android:id="@+id/rpasswordTV"
+
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPassword"
+            android:hint="@string/rpasswordhint"
+            android:ems="10"
+            android:id="@+id/rpasswordET"
+            android:layout_alignBottom="@+id/rpasswordTV"
+            android:layout_toEndOf="@+id/rnameTV" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:text="@string/rconfirmpassword"
+            android:textSize="17dp"
+            android:id="@+id/rconfirmpasswordTV"
+
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPassword"
+            android:hint="@string/rconfirmpasswordhint"
+            android:ems="10"
+            android:id="@+id/rconfirmpasswordET"
+            android:layout_alignBottom="@+id/rconfirmpasswordTV"
+            android:layout_toEndOf="@+id/rnameTV" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:text="@string/rcontactperson"
+            android:textSize="17dp"
+            android:id="@+id/rcontactpersonTV"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPersonName"
+            android:hint="@string/rcontactpersonhint"
+            android:ems="10"
+            android:id="@+id/rcontactpersonET"
+            android:layout_alignBottom="@+id/rcontactpersonTV"
+            android:layout_toEndOf="@+id/rnameTV" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:text="@string/rcontactnumber"
+            android:textSize="17dp"
+            android:id="@+id/rcontactnumberTV"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:inputType="phone"
+            android:hint="@string/rcontactnumberhint"
+            android:ems="10"
+            android:id="@+id/rcontactnumberET"
+            android:layout_alignBottom="@+id/rcontactnumberTV"
+            android:layout_toEndOf="@+id/rnameTV" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:text="@string/rcontactaddress"
+            android:textSize="17dp"
+            android:id="@+id/rcontactaddressTV"
+
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:layout_marginLeft="12dp"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:hint="@string/rcontactaddresshint"
+            android:id="@+id/rcontactaddressET"
+            android:layout_alignTop="@+id/rcontactaddressTV"
+            android:layout_toEndOf="@+id/rnameTV"
+            android:scrollbars="vertical"
+            android:background="@android:drawable/edit_text"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:text="@string/rdescription"
+            android:textSize="17dp"
+            android:id="@+id/rdescriptionTV"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:layout_marginLeft="12dp"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:hint="@string/rdescriptionhint"
+            android:id="@+id/rdescriptionET"
+            android:layout_alignTop="@+id/rdescriptionTV"
+            android:layout_toEndOf="@+id/rnameTV"
+            android:scrollbars="vertical"
+            android:background="@android:drawable/edit_text"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="@string/rbutton"
+        android:id="@+id/rbutton"
+        android:background="#FF9933"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

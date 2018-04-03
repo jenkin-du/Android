@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/MobCommons.jar"/>
+	<classpathentry kind="lib" path="libs/MobTools.jar"/>
+	<classpathentry kind="lib" path="libs/SMSSDK-2.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/AMap_Location_V2.4.0_20160308.jar"/>
+	<classpathentry kind="lib" path="libs/AMap_2DMap_V2.8.1_20160202.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.3.1.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
